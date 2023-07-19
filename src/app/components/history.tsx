@@ -40,7 +40,7 @@ export default function History({
         } lg:translate-x-0 top-0 left-0 h-screen w-64 lg:w-1/4  overflow-auto`}
       >
         {requests.map((request: Request, index: number) => (
-          <div key={index} className="p-2 border-b">
+          <div key={index} className="p-2">
             <h2 className="font-bold">Request {index + 1}</h2>
 
             <span className="text-sm font-bold">{request.url}</span>
@@ -58,6 +58,7 @@ export default function History({
                 Delete
               </button>
             </div>
+            <div className="divider"></div>
           </div>
         ))}
       </div>
